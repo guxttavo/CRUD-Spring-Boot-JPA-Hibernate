@@ -1,6 +1,7 @@
 package com.example.demo.config;
 
 import com.example.demo.entities.Users;
+import com.example.demo.repositories.OrderRepository;
 import com.example.demo.repositories.UsersRepository;
 import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class TestConfig implements CommandLineRunner {
     @Autowired
     private UsersRepository usersRepository;
 
+    private OrderRepository orderRepository;
 
     @Override
     public void run(String... args) throws Exception {
